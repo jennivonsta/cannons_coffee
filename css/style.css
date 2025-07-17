@@ -10,18 +10,34 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --white: #ffffff;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --light-blue: #cadbf8;
+  --black: #000000;
+  --font-family: poppins;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 2rem;
   text-align: left;
+  align-items: center;
 }
 
 .box {
-  background-color: #cadbf8;
-  border-bottom: 5px solid #cadbf8;
-  border-top: 5px solid #cadbf8;
+  background-color: var(--light-blue);
+  border-bottom: 5px solid var(--light-blue);
+  border-top: 5px solid var(--light-blue);
   text-align: left;
   padding-left: 2rem;
 }
@@ -30,9 +46,10 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  background-color: #cadbf8;
+  background-color: var(--light-blue);
   text-align: left;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .cards img {
@@ -45,32 +62,34 @@ img {
 }
 
 body {
-  font-family: Poppins;
+  font-family: var(--font-family);
   font-size: 1.125rem;
   line-height: 1.5;
-  color: black;
-  background-color: #063270;
+  color: var(--black);
+  background-color: var(--catalina);
   margin: 0;
   padding: 0;
 }
 
 main {
-  background-color: white;
+  background-color: var(--white);
   text-align: center;
-  border-bottom: 5px solid #ffd034;
-  border-top: 5px solid #ffd034;
+  border-bottom: 5px solid var(--sunglow);
+  border-top: 5px solid var(--sunglow);
   grid-column: 1/3;
 }
 
 header {
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: normal;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 h1 {
   font-weight: 300;
@@ -112,40 +131,40 @@ nav ul {
 }
 
 nav a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 nav a:hover {
-  color: #cadbf8;
+  color: var(--light-blue);
 }
 
 .button {
   display: inline-block;
-  background-color: #03c168;
-  color: #fefefc;
+  background-color: var(--vegan);
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
 }
 .button:hover {
-  background-color: #2b70e4;
+  background-color: var(--bluetiful);
 }
 
 .card-button {
   display: inline-block;
-  background-color: #063270;
-  color: #fefefc;
+  background-color: var(--catalina);
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
 }
 .card-button:hover {
-  background-color: #209d5c;
+  background-color: var(--vegan);
 }
 
 footer {
   text-align: center;
-  color: #ffffff;
+  color: var(--white);
   margin-top: 3rem;
 }
 
