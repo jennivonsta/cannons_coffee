@@ -23,7 +23,7 @@ html {
 
 .container {
   max-width: 1200px;
-  margin: 2rem;
+  margin: 0 auto;
 }
 
 .card {
@@ -34,29 +34,6 @@ html {
   align-items: center;
 }
 
-.box {
-  background-color: var(--light-blue);
-  border-bottom: 5px solid var(--light-blue);
-  border-top: 5px solid var(--light-blue);
-  text-align: left;
-  padding-left: 2rem;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  background-color: var(--light-blue);
-  text-align: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.cards img {
-  margin: auto;
-  border-radius: 20px;
-}
-
 img {
   max-width: 100%;
 }
@@ -65,14 +42,13 @@ body {
   font-family: var(--font-family);
   font-size: 1.125rem;
   line-height: 1.5;
-  color: var(--black);
+  color: black;
   background-color: var(--catalina);
   margin: 0;
-  padding: 0;
 }
 
 main {
-  background-color: var(--white);
+background-color: var(--white);
   text-align: center;
   border-bottom: 5px solid var(--sunglow);
   border-top: 5px solid var(--sunglow);
@@ -103,12 +79,6 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2.5rem;
-  line-height: 1.1667;
-}
-
-h3 {
-  font-weight: 300;
-  font-size: 1.75rem;
   line-height: 1.1667;
 }
 
@@ -150,38 +120,18 @@ nav a:hover {
   background-color: var(--bluetiful);
 }
 
-.card-button {
-  display: inline-block;
-  background-color: var(--catalina);
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.card-button:hover {
-  background-color: var(--vegan);
-}
-
 footer {
   text-align: center;
   color: var(--white);
-  margin-top: 3rem;
-}
-
-@media (min-width: 650px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
+  margin: 3rem;
 }
 
 @media (min-width: 1000px) {
-  .grid-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-  }
   header {
     justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 2rem;
   }
 }
+
 

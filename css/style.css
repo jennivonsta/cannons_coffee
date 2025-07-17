@@ -23,7 +23,7 @@ html {
 
 .container {
   max-width: 1200px;
-  margin: 2rem;
+  margin: 0 auto;
 }
 
 .card {
