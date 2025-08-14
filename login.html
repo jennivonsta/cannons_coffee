@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/latte.css">
-    
+
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="wrapper">
-                <img src="images/cannons-coffee-logo.webp"
-                    alt="Cannons Coffee, Beans of Joy! Est. 2014" />
+                <img src="images/cannons-coffee-logo.webp" alt="Cannons Coffee, Beans of Joy! Est. 2014" />
                 <h1>Cannons Coffee</h1>
             </div>
             <nav>
@@ -26,22 +27,33 @@
                 </ul>
             </nav>
         </header>
-    
-        <main>
-            <div class="card">
-                <img src="images/latte.jpg" alt="Latte in a cup" />
-                <div>
-                    <h2>Cafe Latte</h2>
-                    <p>One shot of espresso coffee plus plenty of steamed milk. Choose skim milk, regular milk, or oat milk.
-                    </p>
-                    <p><a href="https://www.anniroenkae.com" target="_blank" class="button">Order Now</a></p>
-                </div>
-            </div>
-        </main>
+
+       <main>
+        <div class="form-container">
+            <h1> Login Page </h1>
+            <form id="form">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="your@email.com" required>
+                <br>
+                <label for="password">Password: </label>
+                <input type="text" id="password" name="password" placeholder="password" required>
+                <br>
+                <br>
+                <button class="submitButton" type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="container"></div>
+       </main>
         <footer>
             <img src="images/logo-footer.webp" alt="Cannons Coffee, Beans of Joy! Est. 2014" />
             <p> &copy; 2024 Cannons Coffee. All Rights Reserved.</p>
         </footer>
-        </div>
+    </div>
+    <script src="js/custom-login.js"></script>
 </body>
+
 </html>
